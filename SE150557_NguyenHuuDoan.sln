@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE150557_NguyenHuuDoan", "SE150557_NguyenHuuDoan\SE150557_NguyenHuuDoan.csproj", "{477C546E-0020-4DF8-94C9-C4819D261A86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE150557_NguyenHuuDoanRepo", "SE150557_NguyenHuuDoanRepo\SE150557_NguyenHuuDoanRepo.csproj", "{2A46B317-B1C1-46F6-BC4E-86B30EE06966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{477C546E-0020-4DF8-94C9-C4819D261A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477C546E-0020-4DF8-94C9-C4819D261A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477C546E-0020-4DF8-94C9-C4819D261A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477C546E-0020-4DF8-94C9-C4819D261A86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A46B317-B1C1-46F6-BC4E-86B30EE06966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A46B317-B1C1-46F6-BC4E-86B30EE06966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A46B317-B1C1-46F6-BC4E-86B30EE06966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A46B317-B1C1-46F6-BC4E-86B30EE06966}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E59D67E-D6E6-4AED-8CB0-FF0593AD9AB8}
+	EndGlobalSection
+EndGlobal
