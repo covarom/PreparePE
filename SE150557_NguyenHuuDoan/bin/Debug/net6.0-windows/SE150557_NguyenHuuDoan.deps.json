@@ -470,7 +470,9 @@
       },
       "SE150557_NguyenHuuDoanRepo/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
+          "Microsoft.Extensions.Configuration": "6.0.1",
+          "Microsoft.Extensions.Configuration.Json": "6.0.0"
         },
         "runtime": {
           "SE150557_NguyenHuuDoanRepo.dll": {}

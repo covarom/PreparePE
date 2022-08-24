@@ -77,6 +77,7 @@
             this.btnNew.TabIndex = 3;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnUpdate
             // 
@@ -86,6 +87,7 @@
             this.btnUpdate.TabIndex = 4;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnClose
             // 
@@ -95,6 +97,7 @@
             this.btnClose.TabIndex = 5;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnDelete
             // 
@@ -104,6 +107,7 @@
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSearch
             // 
@@ -113,6 +117,7 @@
             this.btnSearch.TabIndex = 7;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -169,6 +174,7 @@
             // 
             // txtAccountId
             // 
+            this.txtAccountId.Enabled = false;
             this.txtAccountId.Location = new System.Drawing.Point(104, 23);
             this.txtAccountId.Name = "txtAccountId";
             this.txtAccountId.Size = new System.Drawing.Size(217, 23);
@@ -176,6 +182,7 @@
             // 
             // txtAccountName
             // 
+            this.txtAccountName.Enabled = false;
             this.txtAccountName.Location = new System.Drawing.Point(104, 63);
             this.txtAccountName.Name = "txtAccountName";
             this.txtAccountName.Size = new System.Drawing.Size(217, 23);
@@ -183,6 +190,7 @@
             // 
             // txtBranchName
             // 
+            this.txtBranchName.Enabled = false;
             this.txtBranchName.Location = new System.Drawing.Point(104, 102);
             this.txtBranchName.Name = "txtBranchName";
             this.txtBranchName.Size = new System.Drawing.Size(217, 23);
@@ -190,6 +198,7 @@
             // 
             // txtTypeID
             // 
+            this.txtTypeID.Enabled = false;
             this.txtTypeID.FormattingEnabled = true;
             this.txtTypeID.Items.AddRange(new object[] {
             "AT0001",
@@ -203,6 +212,7 @@
             // 
             // txtOpenDate
             // 
+            this.txtOpenDate.Enabled = false;
             this.txtOpenDate.Location = new System.Drawing.Point(455, 20);
             this.txtOpenDate.Name = "txtOpenDate";
             this.txtOpenDate.Size = new System.Drawing.Size(220, 23);
@@ -233,6 +243,7 @@
             this.Controls.Add(this.dgvAccount);
             this.Name = "Managerment";
             this.Text = "Managerment";
+            this.Load += new System.EventHandler(this.Managerment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -58,3 +58,4 @@ D:\Ki5-FPT\3W_PRN\SelfWork\SE150557_NguyenHuuDoan\SE150557_NguyenHuuDoan\bin\Deb
 D:\Ki5-FPT\3W_PRN\SelfWork\SE150557_NguyenHuuDoan\SE150557_NguyenHuuDoan\bin\Debug\net6.0-windows\SE150557_NguyenHuuDoanRepo.dll
 D:\Ki5-FPT\3W_PRN\SelfWork\SE150557_NguyenHuuDoan\SE150557_NguyenHuuDoan\bin\Debug\net6.0-windows\SE150557_NguyenHuuDoanRepo.pdb
 D:\Ki5-FPT\3W_PRN\SelfWork\SE150557_NguyenHuuDoan\SE150557_NguyenHuuDoan\obj\Debug\net6.0-windows\SE150557_NguyenHuuDoan.Managerment.resources
+D:\Ki5-FPT\3W_PRN\SelfWork\SE150557_NguyenHuuDoan\SE150557_NguyenHuuDoan\obj\Debug\net6.0-windows\SE150557_NguyenHuuDoan.NewForm.resources
