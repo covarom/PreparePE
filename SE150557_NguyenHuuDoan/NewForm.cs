@@ -33,28 +33,85 @@ namespace SE150557_NguyenHuuDoan
         {
 
         }
-
-        private void btnSave_Click(object sender, EventArgs e)
+        static bool checkCapital(string abc)
         {
- 
-                 var BankAccount = new BankAccount()
+            string[] listcheck = new string[10];
+
+            string[] listWord = abc.Split(" ");
+            for (int i = 0; i < listWord.Length; i++)
+            {
+                if (Char.IsUpper(listWord[i], 0))
                 {
-                    AccountId = txtAccountID.Text,
-                    AccountName = txtAccountName.Text,
-                    BranchName = txtBranchName.Text,
-                    OpenDate = DateTime.Parse(txtOpenDate.Text),
-                    TypeId = txtTypeID.Text,
-                };   
-                if (InsertOrUpdate == false)
-                {
-                    customerRepo.Add(BankAccount);
-                    MessageBox.Show("Thêm khách hàng thành công !!");
+
+                    listcheck[i] = "a";
                 }
                 else
                 {
-                    customerRepo.Update(BankAccount);
-                    MessageBox.Show("Cập nhật khách hàng thành công !!");
+                    listcheck[i] = "b";
                 }
+            }
+            var check = true;
+            if (Array.Exists(listcheck, element => element == "b"))
+            {
+                check = false;
+            }
+            return check;
+        }
+        static bool checkYear(DateTime abc)
+        {
+            Console.WriteLine(abc);
+            bool check = false;
+           
+            if(abc.Year <=2022 && abc.Year >= 2000)
+            {
+                check = true;
+            }
+            return check;
+        }
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(txtAccountID.Text) || String.IsNullOrEmpty(txtAccountName.Text) 
+                || String.IsNullOrEmpty(txtBranchName.Text) || String.IsNullOrEmpty(txtOpenDate.Text)
+                || String.IsNullOrEmpty(txtTypeID.Text))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+            }
+            else
+            {
+                if (checkCapital(txtBranchName.Text))
+                {
+                  
+                    if (checkYear(DateTime.Parse(txtOpenDate.Text)))
+                    {
+                        var BankAccount = new BankAccount()
+                        {
+                            AccountId = txtAccountID.Text,
+                            AccountName = txtAccountName.Text,
+                            BranchName = txtBranchName.Text,
+                            OpenDate = DateTime.Parse(txtOpenDate.Text),
+                            TypeId = txtTypeID.Text,
+                        };
+                        if (InsertOrUpdate == false)
+                        {
+                            customerRepo.Add(BankAccount);
+                            MessageBox.Show("Thêm khách hàng thành công !!");
+                        }
+                        else
+                        {
+                            customerRepo.Update(BankAccount);
+                            MessageBox.Show("Cập nhật khách hàng thành công !!");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Năm nằm trong khoản 2000 tới 2022");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Viết hoa chữ cái đầu của Branch Name !!");
+                }
+            }
             
         }
 
